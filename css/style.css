@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+}
+/* body -----------------------------------------------------------*/
+
+html,
+body {
+    height: 100%;
+    /* retains the browser height*/
+    
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    padding: 40px 0px;
+    font-size:320%;
+}
+h2 {
+    margin-bottom: 50px;
+    
+}
+h4 {
+    padding: 10px 0px;
+    font-size: 110%;
+}
+/* navbar ----------------------------------------------------------- */
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 15px;
+    z-index: 99;
+}
+.navbar-nav a {
+    color: #FFF;
+    font-size: 1.1em;
+    margin: 0px 10px;
+}
+.forest-green {
+    color:yellowgreen;
+    font-size:110%;
+}
+.navbar-nav a:hover {
+    color: #16a085; !important;
+    background-color: transparent !important;
+    transition: color 0.5s ease-in-out;
+}
+.navbarScrolled {
+    color: grey;
+    background-color: #fff;
+}
+.navbar-brand {
+    color: #16a085;   
+    margin-top: 0px;
+    font-size: 320%;
+}
+ .icon-bar {
+        background-color:#16a085;
+    }
+/* page1 ----------------------------------------------------------------*/
+
+#page1 {
+    background-image: url("../images/ribbit-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #FFF;
+    display: flex;
+}
+#page1-content {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 90px 0px;
+    line-height: 1;
+}
+#app {
+    background-image: url("../images/ribbit.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+}
+.app-button {
+    width: 140px;
+    margin: 5px;
+    padding: 5px 8px;
+    border: 0.5px outset #16a085;
+    border-radius: 30px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* assigns opacity value only for the background*/
+}
+.app-button:hover {
+    background-color: #16a085;
+    color: #FFF;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out;
+}
+.app-button img {
+    width: 30px;
+}
+.margin-left {
+    margin-left: -100px;
+}
+/* page2 ----------------------------------------------------------------*/
+
+#page2 {
+    text-align: center; 
+    width:65%;
+    margin-left:auto;
+    margin-right:auto;
+    color:grey;
+    
+}
+#page2 img {
+   
+    padding-top:50px;
+}
+#page2 p {
+    padding-bottom:120px;
+}
+
+/* page3 -------------------------------------------------------------*/
+
+#page3 {
+    width:100%;   
+    display:flex;
+    background-color:#666666;
+    
+}
+#page3 .container {    
+    width:60%;
+     color:grey;
+    text-align: center;
+    padding-bottom:80px;
+}
+#page3 h1 {
+    color:#FFF;
+}
+#details {
+   margin:50px 0px;
+    padding:30px;
+     background-color:#ecf0f1;
+}
+#preview {
+    background-image: url("../images/app.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 650px;    
+    
+}
+
+/* page4 -------------------------------------------------------------*/
+
+#page4 {    
+    text-align: center;
+    color:#16a085;
+    padding-bottom:50px;
+}
+input {
+    width:350px;
+    padding:5px;
+    margin:3px;
+    transition: border ease-in 0.7s ;
+}
+
+.alertdiv {
+    color:lightcoral;
+    font-size:85%;
+    padding:10px 0px;
+   
+}
+.hidden {
+    visibility: hidden;
+}
+#success {  
+    margin-top:40px;
+    height:20px;
+}
+.border {
+    border:1px solid salmon;
+}
+/* page5 -------------------------------------------------------------*/
+
+#page5 { 
+    text-align: center;
+    padding:10px;
+    color:yellowgreen;
+    
+}
+/* login page--*/
+#login {
+    width:50%;
+    text-align: center;
+    display:block;
+    padding-top:300px;
+}
+#login input {
+    margin:10px;
+    
+}
+
+
+/* media queries for smaller devices*/
+
+@media only screen and (min-width: 10px) and (max-width: 600px) {
+    .margin-left {
+        margin-left: 0px;
+    }
+    .navbar-brand {
+        color: #16a085;
+    }
+    .navbar-nav a {
+        background-color: transparent;
+        color: #16a085; !important;
+    }
+    .navbarScrolled {
+        background: #FFF;
+    }
+   #page3 .container {
+       width:90%;   
+       background-color:#666666;
+    }
+    input {
+        width:80%;
+    }
+    
+    
+}
+@media only screen and (min-width: 601px) and (max-width: 990px) {
+    .margin-top {} .margin-left {
+        margin-left: 0px;
+    }
+    .app-button:first-of-type {
+        margin-left: 0px;
+    }
+    #aboutMe {}
+}
